@@ -9,18 +9,23 @@ jobs:
   - template: windows/azure-pipelines.yml
     parameters:
       triplet: x86-windows
+
   - template: windows/azure-pipelines.yml
     parameters:
       triplet: x64-windows
+
   - template: windows/azure-pipelines.yml
     parameters:
       triplet: x64-windows-static
+
   - template: windows/azure-pipelines.yml
     parameters:
       triplet: x64-uwp
+
   - template: windows/azure-pipelines.yml
     parameters:
       triplet: arm64-windows
+
   - template: windows/azure-pipelines.yml
     parameters:
       triplet: arm-uwp

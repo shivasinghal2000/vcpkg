@@ -4,12 +4,9 @@
 
 pool:
   name: PrWin-2020-04-05-1
-  demands:
-  - Agent.OS -equals Windows_NT
-  - VisualStudio_16.0
 
 variables:
-  triplet: 'x86-windows'
+  triplet: '${{ parameters.triplet }}'
   forceAllPortsToRebuildKey: ''
 
 steps:
