@@ -2,7 +2,8 @@
 # SPDX-License-Identifier: MIT
 #
 
-job: 'windows-${{ parameters.triplet }}'
+jobs:
+- job: 'windows-${{ parameters.triplet }}'
   pool:
     name: PrWin-2020-04-05-1
 
