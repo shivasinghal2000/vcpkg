@@ -3,7 +3,7 @@
 #
 
 jobs:
-- job: windows-${{ parameters.triplet }}
+- job: ${{ parameters.jobName }}
   pool:
     name: PrWin-2020-04-05-1
 
