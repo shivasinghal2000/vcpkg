@@ -98,7 +98,7 @@ jobs:
       Write-Output "skip list: $skipList"
       $(System.DefaultWorkingDirectory)\scripts\azure-pipelines\windows\ci-step.ps1 -Triplet "$(triplet)" -ExcludePorts $skipList
       Write-Output "CI test script is complete"
-      errorActionPreference: continue
+    errorActionPreference: continue
     displayName: '** Build vcpkg and test ports **'
 
   - powershell: |
